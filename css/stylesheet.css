@@ -4,7 +4,7 @@
 
 @media (max-width: 500px) {
     
-    #wrapper {
+    body {
         display: grid;
         min-height: 100vh;
         grid-template-rows:10vh auto auto auto;
@@ -113,6 +113,20 @@ footer {
 }
 
 }
+/* Shop site */
+
+body.shop-site header {
+    background-color: blueviolet;
+}
+
+
+header .back-to-home{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* For desktop */
 
 @media (min-width: 600px) {
     header {
