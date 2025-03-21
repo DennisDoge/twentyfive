@@ -1,6 +1,15 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
 
 @media (max-width: 500px) {
     
@@ -9,116 +18,129 @@
         min-height: 100vh;
         grid-template-rows:10vh auto auto auto;
         grid-template-areas: 
-            'hd'
-            'mn'
-            'nav'
-            'ft';
+        'hd'
+        'mn'
+        'nav'
+        'ft';
     }
     
-
-
-header {
-    grid-area: hd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding: 15px;
-}
-
-nav {
-    grid-area: nav;
-    background-color: aqua;
-    position: fixed;
-    right: -100vh;
-    width: 100vw;
-    height: 50vh;
-    transition: right 0.3s;
-}
-
-
-main {
-    grid-area: mn;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-main img{
-    max-width: auto;
-    height: 40vh;
-    border-radius: 10px;
-}
-
-footer {
-    grid-area: ft;
-    background-color: aquamarine;
-}
-.menu {
-    position:fixed;
-    right:-100vw;
-    height: 50vh;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.menu ul{
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    width: auto;
-}
-
-.menu ul li{
-    margin:10px;
-    font-size: 1rem;
-}
-
-.menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-
-.menu ul li a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-}
-
-.menu-button i.material-icons{
-    font-size: 2.5rem;
-}
-
-
-.show{
-    right: 0;
-}
-
-.fade-layer{
-    position: fixed;
-    top: 50vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    z-index: 5;
-}
-
-.fade-layer.visible{
-    display: block;
-}
-
+    
+    
+    header {
+        grid-area: hd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        /* padding: 15px; */
+    }
+    
+    nav {
+        grid-area: nav;
+        position: fixed;
+        right: -100vh;
+        width: 100vw;
+        height: 50vh;
+        transition: right 0.3s;
+    }
+    
+    
+    main {
+        grid-area: mn;
+        display: flex;
+        justify-content: center;
+        /* padding: 10px; */
+    }
+    
+    main img{
+        max-width: auto;
+        height: 40vh;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+    footer {
+        grid-area: ft;
+        background-color: aquamarine;
+    }
+    .menu {
+        position:fixed;
+        right:-100vw;
+        height: 50vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    h1 {
+        margin-left: 15px;
+    }
+    
+    .menu ul{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: auto;
+    }
+    
+    .menu ul li{
+        margin:10px;
+        font-size: 1rem;
+    }
+    
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+    
+    .menu ul li a:hover {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+    }
+    
+    .menu-button{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    
+    .menu-button i.material-icons{
+        font-size: 2.5rem;
+        width: 40px;
+        height: 40px;
+        
+    }
+    
+    
+    .show{
+        right: 0;
+    }
+    
+    .fade-layer{
+        position: fixed;
+        top: 50vh;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        z-index: 5;
+    }
+    
+    .fade-layer.visible{
+        display: block;
+    }
+    
 }
 /* Shop site */
 
@@ -136,6 +158,7 @@ header .back-to-home{
 .product-grid {
     display: grid;
     padding: 15px;
+    gap: 15px;
 }
 
 .product {
@@ -144,7 +167,8 @@ header .back-to-home{
 }
 
 .product img{
-    width: 100vw;
+    width: 100%;
+    border-radius: 10px;
 }
 
 
