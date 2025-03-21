@@ -10,8 +10,8 @@
         grid-template-rows:10vh auto auto auto;
         grid-template-areas: 
             'hd'
-            'nav'
             'mn'
+            'nav'
             'ft';
     }
     
@@ -40,9 +40,16 @@ nav {
 
 main {
     grid-area: mn;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
-
+main img{
+    max-width: auto;
+    height: 40vh;
+    border-radius: 10px;
+}
 
 footer {
     grid-area: ft;
@@ -116,7 +123,7 @@ footer {
 /* Shop site */
 
 body.shop-site header {
-    background-color: blueviolet;
+    background-color: black;
 }
 
 
@@ -125,6 +132,21 @@ header .back-to-home{
     font-size: 2rem;
     cursor: pointer;
 }
+
+.product-grid {
+    display: grid;
+    padding: 15px;
+}
+
+.product {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.product img{
+    width: 100vw;
+}
+
 
 /* For desktop */
 
