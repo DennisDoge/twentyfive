@@ -27,13 +27,7 @@ html,body {
     display: block;
 }
 
-h2 {
-    font-size: 1.5 rem;
-    color: white;
-    margin: 20px;
-    max-width: 80%;
-    line-height: 1.5;
-}
+
 
 /* Featured Section */
 .featured-section {
@@ -90,14 +84,24 @@ h2 {
 
 /* Shop site */
 
+
 body.shop-site header {
     background-color: white;
 }
 
 
+body.shop-site header img{
+    margin-right: 50px;
+}
+
+body.shop-site header .back-to-home{
+    justify-content: center;
+    margin-left: 20px;
+}
+
 header .back-to-home{
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
 }
 
@@ -117,17 +121,52 @@ header .back-to-home{
     border-radius: 10px;
 }
 
-/* About site */
-.heading{
-    width: 90%;
+/* About us */ 
+
+.about-main {
+    padding: 40px;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
 }
 
-.cards{
+.about-sub{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: black;
+}
+
+.about-img {
+    flex: 1;
+}
+.about-img img{
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.about
-
+.team-container{
+    
+}
 /* Phone code */ 
 @media (max-width: 500px) {
     
@@ -251,14 +290,6 @@ header .back-to-home{
     
 }
 
-body.shop-site header img{
-    margin-right: 100px;
-}
-
-body.shop-site header .back-to-home{
-    justify-content: center;
-    margin-left: 20px;
-}
 
 
 /* For desktop */
@@ -322,7 +353,7 @@ body.shop-site header .back-to-home{
         text-decoration: none;
         color: black;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 1.5rem;
         position: relative;
         padding: 5px 0;
     }
@@ -373,11 +404,17 @@ body.shop-site header .back-to-home{
     .menu-button{
         display: none;
     }
-    
-    /* Hide shop */
-    .back-to-home{
-        display: none;
+
+    /* Shop site */
+
+    .material-icons{
+        display:none;
     }
+
+    body.shop-site header img{
+        margin-right: 200px;
+    }
+    
     
     
 }
