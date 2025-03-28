@@ -358,7 +358,66 @@ body.product-site header .back-to-home{
 }
 
 /* Footer */ 
+.main-footer {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 30px;
+    border-top: 1px solid #4a4a4a;
+    width: 100%;
+}
 
+.footer-context {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 1.5rem;
+    padding: 0 15px;
+}
+¨
+.footer-section h3{
+    font-size: 1.2 rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer-section p{
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-section ul li a:hover {
+    color: whitesmoke;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #4a4a4a;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color:whitesmoke;
+}
 
 /* Phone code */ 
 @media (max-width: 500px) {
