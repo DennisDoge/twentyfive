@@ -555,6 +555,20 @@ body.product-site header .back-to-home{
         height: 60px;
     }
     
+
+    /* footer */
+
+    .footer-context {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+
+
 }
 
 
