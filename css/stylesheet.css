@@ -1,14 +1,21 @@
-* {
+@font-face{
+    font-family: myFont;
+    src:url(misc/Spartan-Regular.ttf) format("truetype");
+}
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100%;
+    font-family: myFont, sans-serif;
 }
-
 html,body {
     width: 100%;
     height: 100%;
 }
+
 
 
 /* Gemensamt code */
@@ -45,7 +52,8 @@ html,body {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 60px;
+
 }
 
 .product-card {
@@ -108,7 +116,7 @@ header .back-to-home{
 .product-grid {
     display: grid;
     padding: 15px;
-    gap: 15px;
+    gap: 30px;
 }
 
 .product {
@@ -348,6 +356,10 @@ body.product-site header .back-to-home{
 .add_cart:hover{
     transform: translateY(-5px);
 }
+
+/* Footer */ 
+
+
 /* Phone code */ 
 @media (max-width: 500px) {
     
@@ -552,6 +564,7 @@ body.product-site header .back-to-home{
         font-size: 1.2rem;
         position: relative;
         padding: 5px 0;
+        font-family: myFont;
     }
     
     .desktop-nav ul li a::after {
