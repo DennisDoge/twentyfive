@@ -357,6 +357,17 @@ body.product-site header .back-to-home{
     transform: translateY(-5px);
 }
 
+.product-simular {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    padding: 10;
+}
+
+.product-simular:hover {
+    transform: translateY(-5px);
+}
+
 /* Footer */ 
 .main-footer {
     background-color: #3a3a3a;
