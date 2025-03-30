@@ -587,6 +587,10 @@ body.product-site header .back-to-home{
         height: 40px;
         
     }
+
+    .about-img{
+        display: none;
+    }
     
     
     .show{
