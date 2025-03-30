@@ -81,7 +81,7 @@ html,body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 60px;
-
+    
 }
 
 .product-card {
@@ -217,7 +217,7 @@ header .back-to-home{
     justify-content: center;
     gap: 30px;
     width: 100%;
-
+    
 }
 
 .team-card {
@@ -254,7 +254,7 @@ header .back-to-home{
     font-size: 2.5rem;
     margin-bottom: 50px;
     color: black;
-
+    
 }
 .team-card h3 {
     margin-bottom: 5px;
@@ -291,7 +291,7 @@ body.product-site header .back-to-home{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-
+    
 }
 
 .product-img {
@@ -486,7 +486,7 @@ body.product-site header .back-to-home{
         color: black;
         /* padding: 15px; */
     }
-
+    
     .main-text{
         font-size: 1rem;
         z-index: 1;
@@ -587,13 +587,13 @@ body.product-site header .back-to-home{
     .desktop-nav {
         display: none;
     }
-
+    
     /* Product page */
-
+    
     .product-page {
         padding: 20px;
     }
-
+    
     .main-img {
         height: 250px;
     }
@@ -603,20 +603,20 @@ body.product-site header .back-to-home{
         height: 60px;
     }
     
-
+    
     /* footer */
-
+    
     .footer-context {
         flex-direction: column;
     }
-
+    
     .footer-section {
         margin-bottom: 2rem;
         text-align: center;
     }
-
-
-
+    
+    
+    
 }
 
 
@@ -734,13 +734,13 @@ body.product-site header .back-to-home{
     .menu-button{
         display: none;
     }
-
+    
     /* Shop site */
-
+    
     .material-icons{
         display:none;
     }
-
+    
     body.shop-site header img{
         margin-right: 200px;
     }
