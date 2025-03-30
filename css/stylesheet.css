@@ -1,6 +1,6 @@
 @font-face{
     font-family: myFont;
-    src:url(misc/Spartan-Regular.ttf) format("truetype");
+    src:url('/misc/Spartan-Regular.ttf') format("truetype");
 }
 
 
@@ -441,6 +441,10 @@ body.product-site header .back-to-home{
     padding: 0;
 }
 
+.footer-section ul li{
+    margin-top: 10px;
+}
+
 .footer-section ul li a {
     color: white;
     text-decoration: none;
@@ -490,6 +494,10 @@ body.product-site header .back-to-home{
         font-size: 1rem;
         z-index: 1;
     }
+
+    .desktop {
+        display: none;
+    }
     
     nav {
         grid-area: nav;
@@ -532,6 +540,10 @@ body.product-site header .back-to-home{
     
     h1 {
         margin-left: 15px;
+    }
+
+    .main-text h1{
+        font-size: 2rem;
     }
     
     .menu ul{
@@ -621,7 +633,7 @@ body.product-site header .back-to-home{
 
 /* For desktop */
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     
     body {
         display: grid;
@@ -652,6 +664,9 @@ body.product-site header .back-to-home{
         letter-spacing: 2px;
     }
     
+    .phone {
+        display: none;
+    }
     
     h1 img {
         width: 200px;
