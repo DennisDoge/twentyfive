@@ -93,6 +93,8 @@ html,body {
 
 .product-card h3 {
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .product-card p {
@@ -207,13 +209,14 @@ header .back-to-home{
 
 .team-section{
     text-align: center;
-    padding: 60px;
+    padding: 0;
     width: 100%;
 }
 
 .team-cards {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 300px;
     justify-content: center;
     gap: 30px;
     width: 100%;
@@ -222,7 +225,7 @@ header .back-to-home{
 
 .team-card {
     flex: 1;
-    max-width: 300px;
+    max-width: 700px;
     padding: 30px 20px;
     background: white;
     border-radius: 10px;
@@ -236,8 +239,8 @@ header .back-to-home{
 }
 
 .team-img{
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto 20px;
     overflow: hidden;
     border-radius: 50%;
@@ -393,10 +396,19 @@ body.product-site header .back-to-home{
     border-radius: 10px;
     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
     max-width: 500px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .product-simular:hover {
     transform: translateY(-5px);
+}
+
+.product-simular h3 {
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 /* Footer */ 
@@ -759,10 +771,20 @@ body.product-site header .back-to-home{
         display:none;
     }
     
+
+    body.cart-site header {
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     body.shop-site header img{
-        margin-right: 200px;
+        margin-right: 50px;
     }
     
     
-    
+    .back-to-home {
+        display: none;
+    }
 }
